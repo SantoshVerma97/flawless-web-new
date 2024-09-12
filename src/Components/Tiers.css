@@ -1,0 +1,7 @@
+.tiers h1 {
+    background-image:  url(../assets/TitleBG.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
