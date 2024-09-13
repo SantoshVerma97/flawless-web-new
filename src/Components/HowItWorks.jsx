@@ -4,7 +4,7 @@ import img1 from '../assets/HIW1.png'
 
 const HowItWorks = () => {
     return (
-        <div className='row'>
+        <div className='row Working'>
             <div className="row works">
                 <h1 style={{ fontSize: "60px", fontWeight: 700, textAlign: "center" }}> How It Works </h1>
             </div>

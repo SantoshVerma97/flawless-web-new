@@ -6,7 +6,7 @@ import "./Tiers.css";
 
 const Tiers = () => {
   return (
-    <div className="container">
+    <div className="container Tier">
       <div className="row tiers">
         <h1 className="w-100 text-center" style={{ fontSize: "60px", fontWeight: 700 }}>
           Tier Structure

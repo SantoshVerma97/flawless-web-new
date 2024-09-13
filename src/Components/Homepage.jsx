@@ -27,7 +27,7 @@ const Homepage = () => {
     }, [isVisible]);
 
     return (
-        <>
+        <div className='home'>
             <div className='row homepage'>
                 {isVisible && <h1 className={`fade-text ${isVisible ? 'visible' : 'hidden'}`}> YOUR ON-DEMAND GLAM </h1>} < br />
                 {isVisible && <h1 className={`fade-text ${isVisible ? 'visible' : 'hidden'}`} > EXPERIENCE IS HERE </h1>}
@@ -45,7 +45,7 @@ const Homepage = () => {
                     <img src={twitter} alt="twitter" style={{ paddingLeft: "14px" }} />
                 </div>
             </div >
-        </>
+        </div>
     );
 }
 export default Homepage;

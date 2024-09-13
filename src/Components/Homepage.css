@@ -9,6 +9,20 @@
     font-weight: 700;
 }
 
+.home {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .fade-text {
     opacity: 0;
     /* Initially hidden */
@@ -38,5 +52,5 @@
     /* add some space between the bottom of the page and the div */
     left: 0;
     width: 100%;
-    margin-bottom: 59px;
+    margin-bottom: 40px;
 }

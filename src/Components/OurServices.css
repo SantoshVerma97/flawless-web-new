@@ -1,9 +1,10 @@
 .services h1 {
-    background-image:  url(../assets/TitleBG.jpg);
+    background-image: url(../assets/TitleBG.jpg);
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    animation: slideInLeft 0.3s ease-in-out;
 }
 
 .bgfade {
@@ -14,4 +15,28 @@
     height: 100%;
     background-color: rgba(245, 242, 242, 0.2);
     padding-bottom: 10px;
+}
+
+.ourService {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

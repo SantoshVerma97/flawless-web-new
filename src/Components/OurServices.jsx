@@ -6,7 +6,7 @@ import img3 from "../assets/Service3.png";
 
 const OurServices = () => {
     return (
-        <>
+        <div className="ourService">
             <div className="row services">
                 <h1 style={{ fontSize: "60px", fontWeight: 700, textAlign: "center" }}>
                     Our Services
@@ -74,7 +74,7 @@ const OurServices = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 export default OurServices;
