@@ -1,7 +1,42 @@
 .homepage h1 {
-    background-image:  url(../assets/TitleBG.jpg);
+    background-image: url(../assets/TitleBG.jpg);
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.fade-text {
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 1s ease-in-out;
+    /* Smooth fade in and fade out over 1 second */
+    visibility: hidden;
+    /* Hidden but keeps space in layout */
+}
+
+.fade-text.visible {
+    opacity: 1;
+    /* Fully visible when the text should appear */
+    visibility: visible;
+    /* Make it visible */
+}
+
+.fade-text.hidden {
+    opacity: 0;
+    /* Fully invisible when text should disappear */
+    visibility: hidden;
+    /* Still hidden but space remains */
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 20px;
+    /* add some space between the bottom of the page and the div */
+    left: 0;
+    width: 100%;
+    margin-bottom: 59px;
 }
