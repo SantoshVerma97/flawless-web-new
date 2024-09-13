@@ -19,32 +19,35 @@ const Tiers = () => {
         </p>
       </div>
 
-      <div className="row justify-content-center w-100" style={{ border: '1px solid #FFF', marginTop: "70px", width:'80%' }}>
-        <div className="col-md-12 px-0  ">
-          <div className="fade123 d-flex justify-content-center align-items-center">
-            {/* <div style={{padding: "18px 171px 18px 100px"}}> */}
-            <img src={silver} alt="Silver Tier" style={{ width: "100px", height: "100px", marginRight: "15px" }} />
-            <p className="mb-0" style={{ fontSize: "20px", fontWeight: 600 }}>Tier 1 - Silver: 60% Commission + Gratuity</p>
+      <div className="row d-flex justify-content-center w-100">
+        <div className="col-md-12 justify-content-center w-75 px-0" style={{ border: '1px solid #FFF', marginTop: "70px", width: '80%' }}>
+          <div className="col-md-12 px-0  ">
+            <div className="fade123 d-flex justify-content-center align-items-center">
+              {/* <div style={{padding: "18px 171px 18px 100px"}}> */}
+              <img src={silver} alt="Silver Tier" style={{ width: "100px", height: "100px", margin: "10px 15px 0 0" }} />
+              <p className="mb-0" style={{ fontSize: "20px", fontWeight: 600 }}>Tier 1 - Silver: 60% Commission + Gratuity</p>
             </div>
-          {/* </div> */}
+            {/* </div> */}
+          </div>
         </div>
-      </div>
-      <div className="row justify-content-center" style={{ border: '1px solid #FFF', marginTop: "45px" }}>
-        <div className="col-md-12 px-0">
-          <div className="fade123 d-flex justify-content-center align-items-center">
-            <img src={gold} alt="Gold Tier" style={{ width: "100px", height: "100px", marginRight: "15px" }} />
-            <p className="mb-0" style={{ fontSize: "20px", fontWeight: 600 }}>Tier 2 - Gold: 65% Commission + Gratuity</p>
+        <div className="col-md-12 justify-content-center w-75 px-0" style={{ border: '1px solid #FFF', marginTop: "45px" }}>
+          <div className="col-md-12 px-0">
+            <div className="fade123 d-flex justify-content-center align-items-center">
+              <img src={gold} alt="Gold Tier" style={{ width: "100px", height: "100px", margin: "10px 15px 0 0" }} />
+              <p className="mb-0" style={{ fontSize: "20px", fontWeight: 600 }}>Tier 2 - Gold: 65% Commission + Gratuity</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-12 justify-content-center w-75 px-0" style={{ border: '1px solid #FFF', marginTop: "45px" }}>
+          <div className="col-md-12 px-0">
+            <div className="fade123 d-flex justify-content-center align-items-center">
+              <img src={platinum} alt="Platinum Tier" style={{ width: "100px", height: "100px", margin: "10px 15px 0 0" }} />
+              <p className="mb-0" style={{ fontSize: "20px", fontWeight: 600 }}>Tier 3 - Platinum: 70% Commission + Gratuity</p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="row justify-content-center" style={{ border: '1px solid #FFF', marginTop: "45px" }}>
-        <div className="col-md-12 px-0">
-          <div className="fade123 d-flex justify-content-center align-items-center">
-            <img src={platinum} alt="Platinum Tier" style={{ width: "100px", height: "100px", marginRight: "15px" }} />
-            <p className="mb-0" style={{ fontSize: "20px", fontWeight: 600 }}>Tier 3 - Platinum: 70% Commission + Gratuity</p>
-          </div>
-        </div>
-      </div>
+
       <div className="row" style={{ textAlign: "center" }}>
         <p style={{ fontSize: "16px", fontWeight: 500, marginTop: "64px" }}>
           YOUR TIER WILL BE DETERMINED BY THE QUALITY OF YOUR WORK, SKILLSET, AND CLIENT FEEDBACK, ALLOWING <br />
