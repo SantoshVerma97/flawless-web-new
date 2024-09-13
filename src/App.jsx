@@ -8,7 +8,7 @@ import HowItWorks from './Components/HowItWorks'
 import WhyChooseUs from './Components/WhyChooseUs'
 import Tiers from './Components/Tiers'
 import About from './Components/About'
-import logo from  './assets/TFLOGO.png'
+import logo from './assets/TFLOGO.png'
 
 function App() {
   const [activeContent, setActiveContent] = useState('content1');
@@ -25,21 +25,23 @@ function App() {
           <source src={BGvideo} type="video/mp4" />
         </video>
       </div>
-      
-        <nav className="navbar">
+
+      <nav className="navbar">
         <div className="logo-container">
           <img src={logo} alt="Logo" className="logo" />
         </div>
         <div className='nav-buttons'>
-        <button onClick={() => handleContentChange('content1')}>Home</button>
-        <button onClick={() => handleContentChange('content2')}>Our Services</button>
-        <button onClick={() => handleContentChange('content3')}>How It Works</button>
-        <button onClick={() => handleContentChange('content4')}>Why Choose TF APP</button>
-        <button onClick={() => handleContentChange('content5')}>Tier Structure</button>
-        <button onClick={() => handleContentChange('content6')}>About</button>
+          <button onClick={() => handleContentChange('content1')}>Home</button>
+          <button onClick={() => handleContentChange('content2')}>Our Services</button>
+          <button onClick={() => handleContentChange('content3')}>How It Works</button>
+          <button onClick={() => handleContentChange('content4')}>Why Choose TF APP</button>
+          <button onClick={() => handleContentChange('content5')}>Tier Structure</button>
+          <button onClick={() => handleContentChange('content6')}>About</button>
         </div>
         <div className="right-button">
-          <button className="extra-button">Login</button>
+          <button className="signUp">
+            Artist Sign Up
+          </button>
         </div>
       </nav>
 
@@ -61,7 +63,7 @@ function App() {
         )}
         {activeContent === 'content4' && (
           <div id="content4" className="content">
-          <WhyChooseUs />
+            <WhyChooseUs />
           </div>
         )}
         {activeContent === 'content5' && (
@@ -74,7 +76,7 @@ function App() {
             <About />
           </div>
         )}
-      </div> 
+      </div>
     </div>
   );
 }

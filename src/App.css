@@ -91,16 +91,49 @@ video {
     margin-right: 50px;
 }
 
-.extra-button {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+.signUp {
+    border: 1px solid transparent;
+    border-radius: 40px;
+    color: black;
+    font-family: roboto;
+    text-align: center;
     font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    padding: 8px 20px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
 }
 
-.extra-button:hover {
-    background-color: rgba(255, 255, 255, 1);
+.signUp::after {
+    background-color: #F0B00A;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.signUp:hover::after {
+    transform: translate(0, 0);
+}
+
+.signUp:hover {
+    border: 2px solid transparent;
+    color: #4b0082;
+    transform: scale(1.05);
+    will-change: transform;
 }
 
 
